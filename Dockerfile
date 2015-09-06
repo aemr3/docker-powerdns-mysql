@@ -8,6 +8,6 @@ RUN apt-get update -q -q && DEBIAN_FRONTEND=noninteractive apt-get install pdns-
 
 RUN rm -rf /etc/powerdns/pdns.d/*
 
-ADD run.sh /
+COPY run.sh /run.sh
 
 CMD ["/run.sh"]
